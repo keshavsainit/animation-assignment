@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> loader  using css animation</title>
+</head>
+<style>
+    .loader{
+        
+        border: rgb(223, 150, 150) 10px solid;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border-top: rgb(231, 57, 57) 10px solid;
+       margin-top: 200px;
+       margin-left: 200px;
+       line-height: 100px;
+       animation: spinAnimate 1.6s ease-in-out infinite normal;
+        
+    }
+
+    @keyframes spinAnimate {
+
+        from{
+            transform: rotate(0deg);
+        }
+
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+</style>
+<body>
+    <div class="loader"></div>
+    
+</body>
+</html>
